@@ -13,3 +13,4 @@ class PerrosView(view: View) : RecyclerView.ViewHolder(view) {
         Picasso.get().load(image).into(binding.ivDog)
     }
 }
+

@@ -74,11 +74,7 @@ class MainActivity : AppCompatActivity(), SearchView.OnQueryTextListener {
 
     override fun onQueryTextSubmit(query: String?): Boolean {
         if (!query.isNullOrEmpty()) {
-            if (query == "Lover" || query == "lover") {
-                searchByName("Poodle".lowercase())
-            } else {
                 searchByName(query.lowercase())
-            }
         }
         return true
     }
